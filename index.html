@@ -17,12 +17,14 @@
     <h1>WORLD CLOCK</h1>
         </header>
 
-    <select>
+    <select id="select">
         <option value="">pick a country</option>
-        <option value="Los angeles">Los angeles</option>
-        <option value="malaysia">Malaysia</option>
-        <option value="london">london</option>
+        <option value="America/Los_Angeles" id="los-angeles">Los angeles</option>
+        <option value="Asia/Kuala_Lumpur" id="malaysia">Malaysia</option>
+        <option value="Europe/London" id="london">london</option>
     </select>
+
+    <div id="cities">
 <div class="city-1" id="countryOne">
     <h2 >Nigeria</h2>
     <div class="date-time" id="dateTime">
@@ -34,23 +36,23 @@
 <div class="city-2" id="countryTwo">
     <h2 >India</h2>
     <div class="date-time">
-<div class="date" id="date">date</div>
-<div class="time" id="time">time</div>
+<div class="date">date</div>
+<div class="time">time</div>
 </div>
 </div>
 <div class="city-3" id="countryThree">
     <h2 >Canada</h2>
     <div class="date-time">
-    <div class="date" id="date">date</div>
-<div class="time" id="time">time</div>
+    <div class="date">date</div>
+<div class="time">time</div>
 </div>
 </div>
-
+</div>
     <footer>
         Coded by <a href="https://github.com/ugo-reg" target="_blank"><strong>Ugochi Ibe</strong></a>  and opensourced on 
         <br/> <a href="https://github.com/ugo-reg/world-clock" target="_blank">Github</a> and hosted by <a href="https://ugochi-personal-world-clock.netlify.app/" target="_blank">Netlify</a> 
     </footer>
+    </div>
     <script src="../src/clock.js"></script>
 </body>
-</div>
 </html>
