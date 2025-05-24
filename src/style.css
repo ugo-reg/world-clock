@@ -24,11 +24,13 @@ text-align: center;
 h2{
 font-size: 60px;
 }
-
+.home{line-height:2;
+text-decoration:underline;}
 footer{
 text-align: center;
 }
 
+#countryThree .date-time{border-bottom: none;}
 select{
 width:50%;
 padding:10px;
@@ -40,7 +42,7 @@ font-family:"Lora", serif;}
 .date-time{display:flex;
 margin:0px;
 justify-content: space-between;
-border-bottom: 1px solid grey;
+border-bottom: 1px dotted grey;
 }
 
 .time{font-size: 60px;
