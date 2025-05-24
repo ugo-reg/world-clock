@@ -31,9 +31,16 @@ function Time(){
 Time();
 setInterval(Time, 1000);
 
+let updateInterval;
+
 function updateSelect(event){
     let selectTimeZone=event.target.value;
+    if(selectTimeZone === "current"){
+        selectTimeZone= moment.tz.guess();
+    }
     let selectName= selectTimeZone.replace("_"," ").split("/")[1];
+   
+    function updateTime() {
     let selectTime=moment().tz(selectTimeZone);
    let citiesElement=document.querySelector("#cities");
    citiesElement.innerHTML=`
@@ -46,7 +53,10 @@ function updateSelect(event){
 </div>
 `
 }
-
+clearInterval(updateInterval);
+updateTime();
+updateInterval=setInterval(updateTime, 1000);
+}
 
 let citiesSelect=document.querySelector("#select");
-citiesSelect.addEventListener("change",updateSelect)
+citiesSelect.addEventListener("change",updateSelect);
