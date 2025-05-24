@@ -8,7 +8,7 @@ margin: 0 auto;
 padding:15px;
 font-size: 18px;
 width:100%;
-max-width: 650px;
+max-width: 750px;
 border-radius: 20px;
 margin-top: 40px;
 margin-bottom: 40px;
@@ -44,14 +44,14 @@ justify-content: space-between;
 border-bottom: 1px solid grey;
 }
 
-.time{font-size: 80px;
-justify-content: end;
+.time{font-size: 60px;
 position:relative;
 top:-30px}
 
-.date{font-size: 40px;
+.date{font-size: 20px;
 margin:0px;}
 
 a{text-decoration: none;
 font-weight: 600;}
 a:hover{text-decoration: underline;}
+

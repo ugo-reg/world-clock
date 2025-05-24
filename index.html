@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Exile&family=Lora:ital,wght@0,400..700;1,400..700&family=Mystery+Quest&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Exile&family=Lora:ital,wght@0,400..700;1,400..700&family=Mystery+Quest&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
     <title>world clock</title>
 </head>
 <body>
@@ -21,24 +23,26 @@
         <option value="malaysia">Malaysia</option>
         <option value="london">london</option>
     </select>
-<div class="city-1">
-    <h2>Nigeria</h2>
-    <div class="date-time">
-<div class="date">15th may 2025</div>
-<div class="time"><strong>4:50:15</strong><small>am</small></div>
+<div class="city-1" id="countryOne">
+    <h2 >Nigeria</h2>
+    <div class="date-time" id="dateTime">
+<div class="date" id="date">15th may 2025</div>
+<div class="time" id="time"><strong>4:50:15</strong><small>am</small></div>
 </div>
   </div>  
 
-<div class="city-2"><h2>India</h2>
+<div class="city-2" id="countryTwo">
+    <h2 >India</h2>
     <div class="date-time">
-<div class="date">date</div>
-<div class="time">time</div>
+<div class="date" id="date">date</div>
+<div class="time" id="time">time</div>
 </div>
 </div>
-<div class="city-3"><h2>Canada</h2>
+<div class="city-3" id="countryThree">
+    <h2 >Canada</h2>
     <div class="date-time">
-    <div class="date">date</div>
-<div class="time">time</div>
+    <div class="date" id="date">date</div>
+<div class="time" id="time">time</div>
 </div>
 </div>
 
