@@ -56,7 +56,12 @@ function updateSelect(event){
 clearInterval(updateInterval);
 updateTime();
 updateInterval=setInterval(updateTime, 1000);
+
+document.getElementById("back-home").style.display = "inline";
 }
 
 let citiesSelect=document.querySelector("#select");
 citiesSelect.addEventListener("change",updateSelect);
+
+
+
